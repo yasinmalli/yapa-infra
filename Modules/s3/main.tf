@@ -29,3 +29,11 @@ EOF
 output "bucket" {
     value = "${aws_s3_bucket.bucket.bucket}"
 }
+
+output "bucket_website_endpoint" {
+    value = "${aws_s3_bucket.bucket.website_endpoint}"
+}
+
+output "bucket_hosted_zone_id" {
+    value = "${aws_s3_bucket.bucket.hosted_zone_id}"
+}
